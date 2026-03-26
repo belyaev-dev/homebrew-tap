@@ -11,7 +11,7 @@ class Helmdoc < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/belyaev-dev/helmdoc/releases/download/v0.1.0/helmdoc_0.1.0_darwin_amd64.zip"
-      sha256 "a466dee35f61f2426ecf1f3f23a6b130dd3b70ec1301fa67d14e7368f4d9b3eb"
+      sha256 "6ca61a5495f973cd18e45bbcbf00c93cd8831f531ce23217a23077e034e53e5b"
 
       define_method(:install) do
         bin.install "helmdoc"
@@ -19,7 +19,7 @@ class Helmdoc < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/belyaev-dev/helmdoc/releases/download/v0.1.0/helmdoc_0.1.0_darwin_arm64.zip"
-      sha256 "6689d78f3873852b6c69907e476a8104301c2377bcc00a44de849854be6007f4"
+      sha256 "5d5cbf28fa04a7acb2b27b3d44c589536083538f7070be40db4d00895dd98853"
 
       define_method(:install) do
         bin.install "helmdoc"
@@ -30,14 +30,14 @@ class Helmdoc < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/belyaev-dev/helmdoc/releases/download/v0.1.0/helmdoc_0.1.0_linux_amd64.zip"
-      sha256 "e83d642806d510792fb2e933b504ba2e2aa5256173d372ad8f9a505efcdcc322"
+      sha256 "9277dcb19d6aca75589c82b647fb6d5727c79e662ac3dd0ae5c836ecdab67f45"
       define_method(:install) do
         bin.install "helmdoc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/belyaev-dev/helmdoc/releases/download/v0.1.0/helmdoc_0.1.0_linux_arm64.zip"
-      sha256 "299ee71ad5228cb7ca6daf661d7503173272def8e4fa079b4b73e041a65ec874"
+      sha256 "8b307d7dbbb049a3c2584a239b2d6e8605cbb22b0668799dceb146cc771a8408"
       define_method(:install) do
         bin.install "helmdoc"
       end
